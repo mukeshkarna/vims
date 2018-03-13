@@ -20,6 +20,7 @@ $(document).ready(function(){
 });
 </script>
 <div class="container">
+  <?php echo $this->session->userdata('user_id'); ?>
     <a class="btn btn-primary" href="<?php echo base_url();?>Post/create_post">Add Post</a> 
     <button class="btn btn-primary" id="button">Hide</button>   
     <div class="panel panel-primary">
@@ -62,7 +63,7 @@ $(document).ready(function(){
             <td><?=$value['post_desc']?></td>
             <td><?=$value['user_id']?></td>
             <td><?=$value['post_tags']?></td>
-            <td><a href="<?php echo base_url();?>Post/edit_post/<?php echo $value['post_id']; ?>" class="btn btn-warning btn-xs navbar-btn">Edit</a></td>
+            <td><a href="<?php echo base_url();?>Post/edit_post/<?php echo $value['post_id'];?>" class="btn btn-warning btn-xs navbar-btn">Edit</a></td>
             <td><a href="<?php echo base_url();?>Post/detail_post/<?php echo $value['post_id']; ?>" class="btn btn-success btn-xs navbar-btn">View</a></td>
             <td><a href="<?php echo base_url();?>Post/delete_post/<?php echo $value['post_id']; ?>" class="btn btn-danger btn-xs navbar-btn">Delete</a></td>
           </tr>

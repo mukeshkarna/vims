@@ -1,5 +1,5 @@
 <div>
-	<form class="form-control" method="post" action="<?php echo base_url();?>Post/create_post" enctype="multipart/form-data">
+	<form class="form-control" method="post" action="<?php echo base_url();?>Post/edit_post/<?=$data['post_id'];?>" enctype="multipart/form-data">
 		<table class="table">
 			<tr scope="row">
 				<div class="form-group">

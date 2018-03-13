@@ -40,6 +40,7 @@ class Login extends MY_Controller
 						'is_logged'=>true,
 						'user_id'=> $user_id
 					);
+					echo $user_id;
 					$this->session->set_userdata($data);
 					redirect('Post');
 				}
