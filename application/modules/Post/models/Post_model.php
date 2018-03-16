@@ -20,7 +20,6 @@ class Post_model extends CI_Model
 			'user_id'=>$this->session->userdata('user_id')
 		);
 		$str=$this->db->insert('posts',$data);
-		// $query=$this->db->query($str);
 	}
 
 
@@ -31,18 +30,17 @@ class Post_model extends CI_Model
 		$this->db->where('user_id',$this->session->userdata('user_id'));
 		$query=$this->db->get();
 		if($query->num_rows())     
-        {
-        	return $query->result_array();
-        }   
-        else
-       	{
-       		return false;
-       	}
+		{
+			return $query->result_array();
+		}   
+		else
+		{
+			return false;
+		}
 	}
 
 	function update_post($id)
 	{
-		echo "string";
 		$data=array(
 			'post_title'=>$_POST['title'],
 			'post_desc'=>$_POST['description'],
@@ -103,7 +101,7 @@ class Post_model extends CI_Model
 		$this->db->select('user_id')->from('posts')->where('post_id',$id);
 		$result=$this->db->get();
 		
-        	return $result->row();
+		return $result->row();
 	}
 }
 ?>

@@ -2,22 +2,16 @@
 /**
 * 
 */
-class ClassName extends AnotherClass
+class Comment_model extends CI_Model
 {
 	
-	function __construct(argument)
+	function __construct()
 	{
-		# code...
+		parent::__construct();
+
 	}
 
-	function post()
-	{
-		$data=array(
-			'comment_desc'=$_POST['post_desc'],
-			'comment_date'=date('Y-m-s h:i:s')
-			'post_id'=$_POST['']
-		);	
-	}
+	
 	
 }
 

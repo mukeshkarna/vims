@@ -9,9 +9,9 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
-                    </a>
+                    <!-- <a href="#">
+                        Home
+                    </a> -->
                 </li>
                 <li>
                     <a href="<?php echo base_url(); ?>Role">Role</a>

@@ -23,7 +23,6 @@
         <input class="btn btn-success" type="submit" name="login_form" value="Sign in">
       </form>
   </div>
-
 <footer class="fixed-bottom">
       <div class="container">
         <span class="text-muted">&copy;<?php echo date('Y'); ?></span>
