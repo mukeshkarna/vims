@@ -51,9 +51,9 @@ class Webpage extends MY_Controller
 		$data['commentReplies']=$this->Webpage_model->getReplyByCommentId($comment);
 
 		// print($id);
-		// echo('<pre>');
-		// print_r($data['commentReplies']);
-		// die;
+		//echo('<pre>');
+		//print_r($data['commentReplies']);
+		//die;
 
 		$this->load->view('header',$data);
 		$this->load->view('blog-item',$data);
