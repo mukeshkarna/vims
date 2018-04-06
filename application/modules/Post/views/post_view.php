@@ -23,9 +23,7 @@ $(document).ready(function(){
     <a class="btn btn-primary" href="<?php echo base_url();?>Post/create_post">Add Post</a> 
     <button class="btn btn-primary" id="button">Hide</button>   
     <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h3>Posts</h3>
-    </div>
+    <br>
     <div class="panel-body">
       <table class="table table-striped">
         <thead>
@@ -57,8 +55,8 @@ $(document).ready(function(){
           <tr>
             <td><?=$value['post_id'];?></td>
             <td><?=$value['post_date']?></td>
-            <td><?=$value['post_title']?></td>
-            <td><?=$value['post_desc']?></td>
+            <td style="text-align: justify;"><?=$value['post_title']?></td>
+            <td style="text-align: justify;"><?=substr($value['post_desc'],0,100)?></td>
             <td><?=$value['user_id']?></td>
             <td><?=$value['post_tags']?></td>
             <td><a href="<?php echo base_url();?>Post/edit_post/<?php echo $value['post_id'];?>" class="btn btn-warning btn-xs navbar-btn">Edit</a></td>

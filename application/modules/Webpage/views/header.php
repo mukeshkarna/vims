@@ -26,6 +26,7 @@
       <div class="container-fluid">
       <ul class="nav navbar-nav">
           <li><a href="<?php echo base_url();?>Webpage/index">Home</a></li>
+          <li><a href="<?php echo base_url();?>Login/index">Admin Login</a></li>
       </ul>
   </div>
 </nav>

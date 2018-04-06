@@ -87,7 +87,7 @@ class Webpage_model extends CI_Model
 
 	function getReplyByCommentId($commentArray)
 	{
-		foreach ($commentArray as $key => $value) 
+		foreach($commentArray as $key => $value) 
 		{
 			$this->db->select('reply_id,reply_desc,reply_date,comment_id');
 			$this->db->from('replies');

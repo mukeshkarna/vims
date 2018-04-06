@@ -25,13 +25,13 @@ class Webpage extends MY_Controller
 		// $config['total_rows'] =$this->Webpage_model->countPost() ;
 		// $config['per_page'] = 3;
 		// $config['num_links'] = 2;
-  //       $config['full_tag_open'] = '<ul class="pagination pagination-lg">';
-  //       $config['full_tag_close'] = '</ul>';
+        //$config['full_tag_open'] = '<ul class="pagination pagination-lg">';
+        //$config['full_tag_close'] = '</ul>';
 
 
 		// $this->pagination->initialize($config);
 		// $data['pagination'] = $this->pagination->create_links();
-  //       $data['records'] = $this->db->get('posts',$config['per_page'], $this->uri->segment(3));
+  		//$data['records'] = $this->db->get('posts',$config['per_page'], $this->uri->segment(3));
 
 		$this->load->view('header',$data);
 		$this->load->view('blog',$data);

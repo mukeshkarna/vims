@@ -19,7 +19,6 @@ class User_model extends CI_Model
 						  'role_id'=>$_POST['role']
 						);
 			$str=$this->db->insert('users',$data);
-			$query=$this->db->query($str);
 	}
 
 	function reads()
@@ -65,6 +64,13 @@ class User_model extends CI_Model
 		$this->db->select('role_name,role_id')->from('role');
 		$query=$this->db->get();
 		return $query->result_array();
+	}
+
+	function getRole()
+	{
+		$this->db->select('role_id')->from('users');
+		$query=$this->db->get();
+		return $query->row_array();
 	}	
 }
 

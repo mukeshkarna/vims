@@ -16,14 +16,14 @@
                             {
                         ?>
                         <div class="blog-content">
-                            <a href="blog-item.php"><h3><?php echo $value['post_title'];?></h3></a>
+                            <h3><?php echo $value['post_title'];?></h3>
                             <div class="entry-meta">
                                 <span><i class="icon-user"></i> <a href="#"><?php echo $value['user_id']; ?></a></span>
                                 <span><i class="icon-calendar"></i> <?php echo $value['post_date']; ?></span>
                                 <span><i class="icon-comment"></i> <a href="blog-item.php#comments"><?php //echo $comment_c; ?> Comments</a></span>
                             </div>
                             <p>
-                                <?php echo $value['post_desc']; ?>
+                                <?php echo substr($value['post_desc'],0,100); ?>
                             </p>
                             <a class="btn btn-default" href="<?php echo base_url();?>Webpage/post_detail/<?=$value['post_id']?>">Read More <i class="icon-angle-right"></i></a>
                             <span><?php echo $value['post_tags']; ?></span>

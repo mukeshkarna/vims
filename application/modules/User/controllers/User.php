@@ -34,6 +34,7 @@ class User extends MY_Controller {
 		$data['module']="User";
 		$data['content_view']="add_user_v";
 		$data['get_role']=$this->User_model->getAllRole();
+		if($this->User_model->getRole()==1)
 		echo modules::run('Template/index',$data);
 	}
 
@@ -61,6 +62,11 @@ class User extends MY_Controller {
 		$data['id']=$id;
 		$data['data']=$this->User_model->delete($id);
 		redirect('User/index');
+	}
+
+	function changePwd()
+	{
+
 	}
 }
 ?>

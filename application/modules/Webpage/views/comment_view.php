@@ -41,6 +41,7 @@ else
                 </div>
                 <form action="<?php echo base_url();?>Webpage/reply_post/<?php echo $value['comment_id'];?>" method="post">
                         <textarea class="form-control" name="reply_d"></textarea>
+                        <br>
                         <input class="btn btn-primary" type="submit" name="reply" value="Reply">
                 </form>
             </div>

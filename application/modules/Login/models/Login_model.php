@@ -26,6 +26,22 @@ class Login_model extends CI_Model
        		return false;
        	}
 	}
+
+	function checkEmail($email)
+	{
+		$this->db->select('id,email')->from('users')->where('email',$email);
+		$result=$this->db->get();
+
+		if($result->num_rows())     
+        {
+        	return $result->row()->id;
+        }   
+        else
+       	{
+       		return false;
+       	}
+
+	}
 }
 
 ?>

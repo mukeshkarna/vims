@@ -19,7 +19,7 @@
                                 <span><i class="icon-calendar"></i> <?php echo $data['post_date']; ?></span>
                                 <!-- <span><i class="icon-comment"></i> <a href="blog-item.php#comments">3 Comments</a></span> -->
                             </div>
-                            <p class="lead">
+                            <p class="lead" style="text-align: justify;">
                                 <?php echo $data['post_desc']; ?>
                             </p>
 

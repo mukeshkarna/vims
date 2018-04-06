@@ -23,6 +23,9 @@
                     <a href="<?php echo base_url();?>Post">Post</a>
                 </li>
                 <li>
+                    <a href="<?php echo base_url();?>User/changePwd">Change Password</a>
+                </li>
+                <li>
                     <a href="<?php echo base_url();?>Login/logout">Logout</a>
                 </li>
             </ul>

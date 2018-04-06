@@ -56,7 +56,7 @@ $(document).ready(function(){
             <td><?=$value['post_id'];?></td>
             <td><?=$value['post_date']?></td>
             <td><?=$value['post_title']?></td>
-            <td><?=$value['post_desc']?></td>
+            <td><?=substr($value['post_desc'],0,100)?></td>
             <td><?=$value['user_id']?></td>
             <td><?=$value['post_tags']?></td>
             <td><a href="<?php echo base_url();?>Post/detail_post/<?php echo $value['post_id']; ?>" class="btn btn-success btn-xs navbar-btn">View</a></td> 
